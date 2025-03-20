@@ -5,7 +5,3 @@ function pow(x, y) {
     }
     return result;
 }
-
-// Приклад використання
-console.log(pow(2, 3)); // Поверне 8
-
