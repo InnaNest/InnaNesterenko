@@ -12,16 +12,16 @@ var arr = [
     {
         userName: "Andrii",
         lastName: "",
-        email: "andrii@mail.ru" // Нам такі не підходять
+        email: "andrii@mail.ru"
     }
 ];
 
 var trustedEmails = arr
     .map(function(obj) {
-        return obj.email; // Отримуємо лише email-адреси
+        return obj.email;
     })
     .filter(function(email) {
-        return /^[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)?@[a-z]+\.(gmail\.com|yahoo\.com)$/.test(email); // Перевірка
+        return /^[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)?@[a-z]+\.(gmail\.com|yahoo\.com)$/.test(email);
     });
 
 console.log(trustedEmails);
