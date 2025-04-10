@@ -11,5 +11,5 @@ const emails = [
 ];
 const domainCheck = /@(gmail\.com|yahoo\.com)$/;
 const validation = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-const validEmails = emails.filter(email => validationRegex.test(email) && domainRegex.test(email));
+const validEmails = emails.filter(email => validation.test(email) && domainCheck.test(email));
 console.log(validEmails);
